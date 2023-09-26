@@ -1,12 +1,13 @@
-1-/LiveServer/:Canlı bir ön izleme sunarak HTML dosyalarınızı anında tarayıcıda görmenizi sağlar.
+1-/LiveServer [Canlı Sunucu]/:Canlı bir ön izleme sunarak HTML dosyalarınızı anında tarayıcıda görmenizi sağlar.
 
-2-/Emmet/:Hızlı ve etkili HTML ve CSS kodu yazmanıza yardımzcı olan güçlü bir eklenti.
+2-/Emmet /:Hızlı ve etkili HTML ve CSS kodu yazmanıza yardımzcı olan güçlü bir eklenti.
+//*Örneğin*\:"html:5"yazarak bir HTML5  şablonu oluşturabilirsiniz.\
 
-3-/HTML Boilerplate/:HTML dosyalarınızı başlatmak için temel bir şablona sahip olmanızı sağlar.
+3-/HTML Boilerplate [HTML Basmakalıp]/:HTML dosyalarınızı başlatmak için temel bir şablona sahip olmanızı sağlar.
 
-4-/Auto Rename Tag/:Bir HTML etiketini yeniden adlandırdığınızda eşleşen kapanış etiketini otomatik olarak günceller.
+4-/Auto Rename Tag[Otomatik Etiket Yeniden Adlandırma]/:Bir HTML etiketini yeniden adlandırdığınızda eşleşen kapanış etiketini otomatik olarak günceller.
 
-5-/HTML CSS Support/:HTML içinde CSS sınıf ve ID önerileri sunar ve CSS dosyalarınıza kolayca bağlantı eklemenizi sağlar.
+5-/HTML CSS Support[HTML CSS Desteği]/:HTML içinde CSS sınıf ve ID önerileri sunar ve CSS dosyalarınıza kolayca bağlantı eklemenizi sağlar.
 
 6-/Html Snippets/:Hızlıca HTML kodlarınızı oluşturmanız için kullanışlı kısa yollar sunar.
 
@@ -17,3 +18,6 @@
 9-/Auto Close Tag/: -Bir HTML etiketi yazdığınjızda otomatik olarak k<p<nış etiketini ekler.
 
 10-/Prettier/:HTML ve diğer kodları otomatik olarak biçimlendirir ve düzenler
+_____
+Not: | Bu eklentiler ;Visual Studio Code HTml 5 geliştirmesi için güçlü bir araç haline getirebilir ve iş akışınızı
+-----  hızlandırabilir. İhtiyaçlarınıza ve tercihlerinize bağlı olarak bu eklentilerden bazılarını veya tümünü kullanabilirsiniz.
