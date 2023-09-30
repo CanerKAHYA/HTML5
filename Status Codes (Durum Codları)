@@ -1,6 +1,6 @@
 /HTTP(Hyper Text Transfer Protocol) durum kodları (status codes)  istemci yani web tarayıcı ile sunucu arasındaki iletişim sürecinde neler olduğunu açıklayan, 3 haneli bir sayıdır.\
   Bilgilendirici (Informational)(1xx):
-     100 Devam
+     100 Tarayıcının sunucuya gönderdiği istek başlığının sunucu tarafından alındığını ve istek gövdesinin de alınmaya hazır olduğu anlamına gelir.
      101 Tarayıcının sunucudan protokol değiştirmesini istediği ve sunucunun da bu isteği kabul ettiği anlamına gelir.
   Başarılı (Successful)(2xx):
      200 Tarayıcı ve sunucu tarafında her şeyin yolunda olduğu anlamına gelen ideal durum kodudur.
