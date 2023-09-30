@@ -1,0 +1,36 @@
+/HTTP(Hyper Text Transfer Protocol) durum kodları (status codes) ise istemci yani web tarayıcı ile sunucu arasındaki iletişim sürecinde neler olduğunu açıklayan, 3 haneli bir sayıdır.\
+  Bilgilendirici (Informational)(1xx):
+     100 Devam
+     101 Protokolleri Değiştirme
+  Başarılı (Successful)(2xx):
+     200 tamam
+     201 Oluşturuldu
+     202 Kabul edildi
+     204 İçerik Yok
+     206 Kısmi İçerik
+  Yönlendirme (Redirection)(3xx):
+     300 Çoktan Seçmeli
+     301 Kalıcı Olarak Taşındı
+     302 Bulundu (geçici yönlendirme)
+     304 Değiştirilmedi
+     307 Geçici Yönlendirme
+     308 Kalıcı Yönlendirme
+  İstemci Hatası (Client Error)(4xx):
+     400 Hatalı İstek
+     401 Yetkisiz
+     403 yasak
+     404 Bulunamadı
+     405 Yöntemine İzin Verilmiyor
+     429 Çok Fazla İstek
+  Sunucu Hatası (Server Error)(5xx):
+     500 Dahili Sunucu Hatası
+     501 Uygulanmadı
+     502 sunucu hatası
+     503 Hizmet Kullanılamıyor
+     504 Geçidi Zaman Aşımı
+
+Bu durum kodları, hem istemcilerin (web tarayıcıları gibi) hem de sunucuların bir isteğin başarısı veya başarısızlığı hakkında iletişim kurmasına yardımcı olur.
+Örneğin, web tarayıcınızla bir web sayfası (HTML belgesi) talep ettiğinizde, sunucu, HTML içeriğiyle birlikte uygun bir durum koduyla yanıt verecektir.
+İstek başarılı olursa, genellikle isteğin başarılı olduğunu belirten 200 OK durum kodunu alırsınız ve HTML içeriği yanıta dahil edilir.
+
+HTML'nin kendisinde durum kodları yoktur; istemci ile sunucu arasındaki iletişimi yöneten HTTP protokolüdür ve durum kodları bu protokolün bir parçasıdır.
