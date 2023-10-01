@@ -1,0 +1,20 @@
+XHR (XMLHttpRequest), web geliştirme için kullanılan bir JavaScript nesnesidir. 
+XHR, web sayfaları üzerindeki veri alışverişi için kullanılır. 
+Özellikle, sayfa yeniden yüklenmeden veya sayfanın yeniden oluşturulmasına gerek kalmadan sunucudan veri almak veya sunucuya veri göndermek için kullanılır.
+
+XHR'nin temel kullanım alanları şunlardır:
+
+          Veri Alışverişi: XHR, web sayfalarının sunucularla iletişim kurmasını ve veri almasını sağlar. 
+                           Bu, sayfanın dinamik olarak güncellenmesi veya verilerin asenkron olarak yüklenmesi gerektiği durumlarda kullanışlıdır.
+
+          API( Application Programming Interface ) İstekleri: XHR, RESTful API'ler veya diğer veri kaynaklarına HTTP(Hyper Text Transfer Protocol) istekleri göndermek için kullanılır. 
+                                                              Bu, harici hizmetlerden veri almak veya sunmak için yaygın bir kullanım alanıdır.
+
+          Form Verisi Gönderme: XHR, web form verilerini sunucuya göndermek için kullanılabilir. 
+                                Bu, kullanıcıların veri gönderme işlemlerini sayfa yeniden yüklenmeden yapmalarını sağlar.
+
+          Grafik veya Dosya İndirme: XHR, kullanıcıya dosyaları veya grafikleri indirme işlemleri için kullanılabilir.
+
+XHR, modern tarayıcılarda hâlâ kullanılsa da, Fetch(Gidip Getirmek) API gibi daha yeni ve kullanımı kolay araçlar genellikle tercih edilir. 
+Fetch API, daha açık ve söz tabanlı bir API sunar. 
+RESTful API, iki bilgisayar sisteminin internet üzerinden güvenli bir şekilde bilgi alışverişi yapmak için kullandığı bir arabirimdir.
