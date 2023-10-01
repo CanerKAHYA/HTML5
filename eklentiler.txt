@@ -9,13 +9,13 @@
 
 5-/HTML CSS Support[HTML CSS Desteği]/:HTML içinde CSS sınıf ve ID önerileri sunar ve CSS dosyalarınıza kolayca bağlantı eklemenizi sağlar.
 
-6-/Html Snippets/:Hızlıca HTML kodlarınızı oluşturmanız için kullanışlı kısa yollar sunar.
+6-/Html Snippets[Html Parçacıkları]/:Hızlıca HTML kodlarınızı oluşturmanız için kullanışlı kısa yollar sunar.
 
 7-/HTMLHint/:HTML kodunuzu denetler ve hataları veya stil kılavuzu ihlallerini gösterir.
 
-8-/HTML to CSS autocompletion/:CSS dosyalarında HTML etiketlerine otomatik tamamlama önerileri sunar.
+8-/HTML to CSS autocompletion[HTML'den CSS'ye otomatik tamamlama]/:CSS dosyalarında HTML etiketlerine otomatik tamamlama önerileri sunar.
 
-9-/Auto Close Tag/: -Bir HTML etiketi yazdığınjızda otomatik olarak k<p<nış etiketini ekler.
+9-/Auto Close Tag[Otomatik Kapatma Etiketi]/: -Bir HTML etiketi yazdığınızda otomatik olarak kapanış etiketini ekler.
 
 10-/Prettier/:HTML ve diğer kodları otomatik olarak biçimlendirir ve düzenler
 _____
