@@ -1,0 +1,27 @@
+Authorization(Yetkilendirme), bilgisayar güvenliği ve web geliştirmede kritik bir kavramdır.
+Authorization, bir kullanıcının veya sistemin kimliğine ve izinlerine dayalı olarak belirli kaynaklara veya eylemlere erişim verme veya erişimi reddetme sürecini ifade eder.
+Web geliştirme ve çevrimiçi hizmetlerde, authorization genellikle kimin belirli web sayfalarına, API'lere erişebileceğini veya belirli eylemleri gerçekleştirebileceğini kontrol etmek için kullanılır.
+Yetkilendirmeyle ilgili temel kavramlar şunları içerir:
+
+       Kimlik Doğrulama:Authorization gerçekleşmeden önce, bir kullanıcı veya sistemin öncelikle kimlik doğrulama yoluyla kimliğini kanıtlaması gerekir.
+                       Yaygın yöntemler arasında kullanıcı adları ve parolalar, belirteçler veya biyometrik verilerin kullanılması yer alır.
+
+       Erişim Kontrolü :Yetkilendirmeyi yönetmek için genellikle erişim kontrol listeleri (ACL'ler) veya rol tabanlı erişim kontrolü (RBAC) kullanılır. 
+                        ACL'ler kimin hangi kaynaklara erişebileceğini tanımlarken RBAC, kullanıcıları veya sistemleri belirli izinlere sahip rollere atar.
+
+       Jetonlar: JSON Web Tokenları (JWT'ler) gibi jetonlar genellikle web uygulamalarında authorization bilgilerini taşımak için kullanılır. 
+                 Bu belirteçler, başarılı kimlik doğrulamanın ardından verilir ve belirli kaynaklara veya eylemlere erişimi doğrulamak için kullanılır.
+
+       OAuth: OAuth (Açık Authorization), güvenli yetkilendirmeyi sağlamak için yaygın olarak kullanılan bir çerçevedir. 
+              Üçüncü taraf uygulamaların, kullanıcının kimlik bilgilerini açığa çıkarmadan kullanıcı adına kaynaklara erişmesine olanak tanır.
+
+       Authorization Başlıkları: HTTP isteklerinde, Authorization başlığı sunucuya kimlik bilgileri veya 
+                                 belirteçler göndermek için kullanılır ve bu daha sonra kullanıcının istenen kaynağa erişim yetkisini doğrular.
+
+      İzin Modelleri: Bazı sistemler, çeşitli niteliklere göre kimin hangi verilere erişebileceğini belirlemek için öznitelik tabanlı erişim denetimi (ABAC) veya
+                      diğer ayrıntılı izin modellerini kullanır.
+
+Hassas verileri korumak, veri gizliliğini sağlamak ve bir sistemin veya uygulamanın çeşitli bölümlerine erişimi kontrol etmek için uygun Authorization çok önemlidir. 
+Yetkisiz erişimin önlenmesine yardımcı olur ve veri ve kaynakların bütünlüğünü korur.
+
+
