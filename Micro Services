@@ -1,0 +1,32 @@
+Microservices, bir yazılım uygulamasının geliştirme ve dağıtımını daha küçük ve bağımsız hizmetlere bölen bir yazılım mimarisi yaklaşımıdır.
+Bu hizmetler, bir uygulamanın belirli işlevselliğini gerçekleştiren ve kendi kendine yeterli olan bağımsız parçalardır. 
+Her bir mikroservis, veritabanları, kullanıcı arayüzleri ve iş mantığı dahil tüm bileşenleri içerebilir ve bu parçaları küçük, yönetilebilir, ve yeniden kullanılabilir hale getirir. 
+Bu yaklaşımın temel hedeflerinden bazıları şunlardır:
+
+   Bağımsız Geliştirme ve Dağıtım: 
+        Her mikroservis, ayrı bir geliştirme ekibi tarafından geliştirilebilir ve bağımsız olarak dağıtılabilir. 
+        Bu, hızlı yazılım geliştirme ve sürüm güncellemelerini kolaylaştırır.
+
+   Ölçeklenebilirlik: 
+        Mikroservisler, her bir servisi ihtiyaca göre ölçeklendirmenizi sağlar. 
+        Bu, yüksek trafikli hizmetlerin daha fazla kaynakla desteklenmesini kolaylaştırır.
+
+   Farklı Teknolojilerin Kullanımı: 
+        Her mikroservis, kendi teknoloji yığınını seçebilir, böylece en uygun teknolojileri kullanabilirsiniz. 
+        Bu, her işlevselliğin en iyi teknolojik çözüme sahip olmasını sağlar.
+
+  Bağlantısızlık: 
+        Mikroservisler, bağımsız bir şekilde çalışır ve sadece gerektiğinde iletişim kurar. 
+        Bu, uygulamanın daha dirençli ve sorunlara karşı izole olmasını sağlar.
+
+  Mikroservis İzleme ve Bakım: 
+        Her mikroservis, izlenebilir ve bakımı yapılabilir bir birimdir. 
+        Bu, hata ayıklamayı kolaylaştırır ve hızlı yanıt verme yeteneğini artırır.
+
+  Yeniden Kullanılabilirlik: 
+        Mikroservisler, işlevselliği yeniden kullanılabilir hale getirir. 
+        Bir servis, farklı projelerde veya uygulamalarda kullanılabilir.
+
+Mikroservisler, büyük ve karmaşık yazılım projelerinde özellikle kullanışlıdır, ancak bu yaklaşımın getirdiği karmaşıklık ve yönetim zorlukları da vardır. 
+Bir mikroservis mimarisini etkili bir şekilde uygulamak, iyi bir planlama, hizmet keşfi, hizmet yönetimi ve güvenlik önlemleri gerektirir. 
+Ayrıca, bu yaklaşım bazı ekstra karmaşıklıklar getirebilir ve geliştirme sürecini koordine etme ihtiyacını artırabilir.
