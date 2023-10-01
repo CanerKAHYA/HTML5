@@ -1,4 +1,4 @@
-Microservices, bir yazılım uygulamasının geliştirme ve dağıtımını daha küçük ve bağımsız hizmetlere bölen bir yazılım mimarisi yaklaşımıdır.
+Micro Services(Mikro Servisler), bir yazılım uygulamasının geliştirme ve dağıtımını daha küçük ve bağımsız hizmetlere bölen bir yazılım mimarisi yaklaşımıdır.
 Bu hizmetler, bir uygulamanın belirli işlevselliğini gerçekleştiren ve kendi kendine yeterli olan bağımsız parçalardır. 
 Her bir mikroservis, veritabanları, kullanıcı arayüzleri ve iş mantığı dahil tüm bileşenleri içerebilir ve bu parçaları küçük, yönetilebilir, ve yeniden kullanılabilir hale getirir. 
 Bu yaklaşımın temel hedeflerinden bazıları şunlardır:
