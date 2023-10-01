@@ -1,0 +1,15 @@
+href="#B1" ifadesi, HTML'deki bir bağlantı (link) veya anket etiketinde kullanılan bir özelliktir. 
+Bu ifade, bir web sayfasında, aynı sayfadaki "B1" adlı bir öğeye bağlantı oluşturur.
+İşleyişi şu şekildedir:
+         1. Web sayfanızda "B1" adında bir HTML öğesi (element) oluşturursunuz. Örneğin:
+
+                       <div id="B1"><!-- "B1" adlı öğenin içeriği --></div>
+  
+         2. Bu öğeyi belirleyen bir bağlantı veya anket oluşturursunuz ve href="#B1" ifadesini kullanarak bu öğeye referans verirsiniz. Örneğin:
+
+              <a href="#B1">Bölüm B1'e Git</a>
+  
+           Kullanıcı, "Bölüm B1'e Git" bağlantısına tıkladığında, tarayıcı, sayfayı "B1" adlı id özelliğiyle belirlenmiş öğeye kaydırır. 
+           Bu, aynı sayfa içindeki içsel sayfa gezintisi oluşturmak için yaygın olarak kullanılan bir tekniktir.
+Bağlantının çalışması için hedef öğedeki id özelliği ve bağlantıdaki href özelliği, harf büyüklüğü dâhil olmak üzere tam olarak eşleşmelidir. 
+Bu, bağlantının doğru bir şekilde çalışmasını sağlamak için önemlidir.
