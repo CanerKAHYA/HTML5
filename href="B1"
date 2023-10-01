@@ -7,7 +7,7 @@ Bu ifade, bir web sayfasında, aynı sayfadaki "B1" adlı bir öğeye bağlantı
   
          2. Bu öğeyi belirleyen bir bağlantı veya anket oluşturursunuz ve href="#B1" ifadesini kullanarak bu öğeye referans verirsiniz. Örneğin:
 
-              <a href="#B1">Bölüm B1'e Git</a>
+                       <a href="#B1">Bölüm B1'e Git</a>
   
            Kullanıcı, "Bölüm B1'e Git" bağlantısına tıkladığında, tarayıcı, sayfayı "B1" adlı id özelliğiyle belirlenmiş öğeye kaydırır. 
            Bu, aynı sayfa içindeki içsel sayfa gezintisi oluşturmak için yaygın olarak kullanılan bir tekniktir.
