@@ -1,0 +1,25 @@
+Session cookies(Oturum Çerezleri), web geliştirme ve tarayıcı oturumu yönetimi için kullanılan özel bir tür çerezdir.
+Çerezler, web sunucuları tarafından tarayıcıya gönderilen küçük metin dosyalarıdır ve kullanıcı cihazında saklanır.
+Session cookies, genellikle kullanıcının oturumunun süresi boyunca geçerlidir ve oturum sonlandığında veya kullanıcı tarayıcısını kapattığında otomatik olarak silinir.
+İşte session cookies hakkında bazı önemli bilgiler:
+
+
+      1. Geçerlilik Süresi: Session cookies, yalnızca kullanıcının oturumu boyunca geçerlidir. 
+                            Kullanıcı tarayıcısını kapattığında veya oturumu sonlandığında bu çerezler otomatik olarak silinir.
+                            Bu, kullanıcının oturumu boyunca çevrimiçi etkileşimde bulunurken kullanıcıyı tanımak için kullanılır.
+
+      2. Kullanım Alanları: Session cookies, genellikle oturum yönetimi için kullanılır. 
+                            Kullanıcı oturum açtığında veya kimlik doğrulama yaptığında, sunucu genellikle bir oturum kimliği (session ID) oluşturur ve bu oturum kimliği,
+                            session cookies ile kullanıcının tarayıcısına kaydedilir. 
+                            Böylece her sayfa isteği sırasında sunucu, oturum kimliğini kullanarak kullanıcıyı tanır.
+
+      3. Güvenlik: Session cookies, kullanıcı kimlik doğrulama ve oturum yönetimi için önemlidir.
+                  Ancak güvenlik açısından dikkat edilmesi gereken bir konu, oturum kimliği gibi hassas bilgilerin iyi bir şekilde korunmasıdır.
+                  Ayrıca, oturum çerezleri kullanıcı cihazında saklanır, bu nedenle tarayıcı veya cihaz güvenliği oturum kimliği ve diğer oturum bilgilerinin korunmasında kritik öneme sahiptir.
+
+      4. Çerez Silme: Session cookies, tarayıcı oturumu kapatıldığında veya kullanıcı tarayıcısını kapattığında otomatik olarak silinir. 
+                      Bu, kullanıcı oturumunu sonlandırırken otomatik olarak oturum çerezlerinin temizlenmesini sağlar.
+
+                      
+Session cookies, web uygulamalarında kullanıcı kimlik doğrulama, oturum yönetimi, sepet içeriği gibi geçici bilgilerin saklanmasında yaygın olarak kullanılır. 
+Bu çerezler, kullanıcının gezinmesini ve etkileşimini kolaylaştırmak için önemlidir.
