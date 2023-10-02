@@ -1,0 +1,51 @@
+
+<body>
+    <p><strong>Aldıkları puanlar:</strong></p>
+<p><label for="ogrenci1">ogrenci1:</label>
+<meter id="ogrenci1" min="0" low="40" high="90" max="100" value="55"></meter><span id="not1">50</span></p>
+<button onclick="aztikla('ogrenci1','not1')">-</button><button onclick="coktikla('ogrenci1','not1')">+</button>
+<input type="color" id="colorpanel1" onblur="colorchange('not1','colorpanel1')">
+
+<p><label for="ogrenci2">ogrenci2:</label>
+<meter id="ogrenci2" min="0" low="40" high="90" max="100" value="100"></meter><span id="not2">100</span></p>
+<button onclick="aztikla('ogrenci2','not2')">-</button><button onclick="coktikla('ogrenci2','not2')">+</button>
+<input type="color" id="colorpanel2" onblur="colorchange('not2','colorpanel2')">
+
+<p><label for="ogrenci3">ogrenci3:</label>
+<meter id="ogrenci3"min="0" low="40" high="90" max="100" value="70"></meter><span id="not3">70</span></p>
+<button onclick="aztikla('ogrenci3','not3')">-</button><button onclick="coktikla('ogrenci3','not3')">+</button>
+<input type="color" id="colorpanel3" onblur="colorchange('not3','colorpanel3')">
+
+<p><label for="ogrenci4">ogrenci4:</label>
+<meter id="ogrenci4" min="0" low="40" high="90" max="100" value="90"></meter><span id="not4">90</span></p>
+<button onclick="aztikla('ogrenci4','not4')">-</button><button onclick="coktikla('ogrenci4','not4')">+</button>
+<input type="color" id="colorpanel4" onblur="colorchange('not4','colorpanel4')"> 
+
+<script src="script.js"></script>
+    
+</body>
+   SCRİPT KISMI
+   function coktikla(studentnameid,studentnoteid)
+    {
+        document.getElementById(studentnameid).value=
+        document.getElementById(studentnameid).value+1;
+        document.getElementById(studentnoteid).innerText=
+        document.getElementById(studentnameid).value;
+    }
+
+    function aztikla(studentnameid,studentnoteid)
+    {
+        document.getElementById(studentnameid).value=
+        document.getElementById(studentnameid).value-1;
+        document.getElementById(studentnoteid).innerText=
+        document.getElementById(studentnameid).value;
+    }
+
+    function colorchange(studentnoteid,colorpanelid)
+    {
+        document.getElementById(studentnoteid).style.color=
+        document.getElementById(colorpanelid).value;
+        document.getElementById()
+    }
+
+  
