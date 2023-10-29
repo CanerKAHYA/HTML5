@@ -1,0 +1,319 @@
+  fetch veya XMLHttpRequest (XHR) başlıkları, web tarayıcılarının sunucularla iletişim kurmak için kullanılan iki farklı JavaScript API'sini ifade eder. 
+  İşte bu başlıkların nasıl kullanılacağına dair kısa bir açıklama:
+
+XMLHttpRequest (XHR):
+
+İlk olarak, bir XMLHttpRequest nesnesi oluşturmanız gerekecektir:
+
+var xhr = new XMLHttpRequest();
+Ardından, hangi HTTP metodunu (GET, POST, vb.) kullanacağınızı ve isteğin nereye gönderileceğini belirtmelisiniz:
+
+xhr.open("GET", "https://www.example.com/api/data", true);
+
+İstek başlıklarını ekleyebilirsiniz, bu isteğin özelleştirilmesine olanak tanır:
+javascript
+
+xhr.setRequestHeader("Content-Type", "application/json");
+İsteği göndermek için send yöntemini kullanabilirsiniz:
+
+xhr.send();
+Son olarak, sunucudan gelen yanıtı ele almak için bir dinleyici eklemelisiniz:
+
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        console.log(xhr.responseText);
+    } else {
+        console.error('Hata kodu: ' + xhr.status);
+    }
+};
+
+Fetch API:
+
+Fetch API ile, bir istek oluşturmak ve göndermek oldukça basittir:
+
+fetch("https://www.example.com/api/data")
+  .then(function(response) {
+    if (!response.ok) {
+      throw new Error("HTTP hata, durum kodu: " + response.status);
+    }
+    return response.json(); // Yanıtı JSON olarak ayrıştır
+  })
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function(error) {
+    console.log("Hata: " + error);
+  });
+Fetch API, modern web geliştirme için daha yaygın olarak kullanılır ve daha basit bir kullanım sunar.
+Hangi yöntemi kullanırsanız kullanın, isteğinizi belirli bir sunucuya göndermeden önce tarayıcınızın güvenlik politikalarına ve CORS (Çapraz Kaynak İstek Paylaşımı) kurallarına dikkat etmelisiniz. 
+Ayrıca, isteği doğru bir şekilde ele almak için sunucu tarafındaki kodunuzun hazır olması gerektiğini unutmayın.
+
+
+JavaScript (JS) başlığı, 
+HTML belgesinin <head> bölümünde yer alır ve JavaScript kodunun bu belge içinde çalıştırılmasını sağlar. İşte JavaScript başlığını nerede ve nasıl kullanacağınız hakkında bilgi:
+
+Nerede Kullanılır:
+JavaScript başlığı, HTML belgesinin <head> bölümünde veya <body> bölümünün sonunda kullanılabilir. Ancak modern web geliştirme uygulamalarında genellikle JavaScript kodunu <body> bölümünün sonuna yerleştirmek, sayfanın daha hızlı yüklenmesine ve kullanıcı deneyimine katkı sağlar. Buna "asyndic JavaScript" denir ve sayfanın HTML içeriği yüklenirken JavaScript kodu arka planda yüklenir ve çalıştırılır.
+
+Nasıl Kullanılır:
+JavaScript Başlığı <head> Bölümünde Kullanımı:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Örnek Sayfa</title>
+    <script type="text/javascript">
+        // JavaScript kodunuzu buraya yazabilirsiniz.
+        function myFunction() {
+            alert("Merhaba, Dünya!");
+        }
+    </script>
+</head>
+<body>
+    <!-- Sayfa içeriği burada -->
+</body>
+</html>
+JavaScript kodu, <script> etiketi içinde type="text/javascript" ile belirtilir. Kod burada myFunction adlı bir JavaScript işlevini tanımlar.
+
+JavaScript <body> Bölümünün Sonunda Kullanımı:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Örnek Sayfa</title>
+</head>
+<body>
+    <!-- Sayfa içeriği burada -->
+    <script type="text/javascript">
+        // JavaScript kodunuzu buraya yazabilirsiniz.
+        function myFunction() {
+            alert("Merhaba, Dünya!");
+        }
+    </script>
+</body>
+</html>
+JavaScript kodu burada <body> bölümünün sonunda tanımlanır. Bu, sayfanın yüklendikten sonra JavaScript kodunun çalıştırılmasını sağlar.
+
+Harici JavaScript Dosyaları:
+JavaScript kodunuzun daha büyük olduğu durumlarda, kodu ayrı bir .js dosyasında saklamak ve bu dosyayı HTML belgesine dahil etmek daha yaygındır. Bu, sayfanızın daha temiz ve düzenli olmasına yardımcı olur.
+
+Örnek harici JavaScript dosyası (script.js):
+
+// script.js
+function myFunction() {
+    alert("Merhaba, Dünya!");
+}
+HTML belgesinde harici JavaScript dosyasını kullanma:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Örnek Sayfa</title>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Sayfa içeriği burada -->
+</body>
+</html>
+Bu yöntemlerle JavaScript kodunu HTML sayfanıza ekleyebilir ve istediğiniz işlevleri gerçekleştirebilirsiniz
+
+
+
+CSS Başlığı, 
+  HTML belgesinin <head> bölüm ünde yer alır ve belgenin görünümünü düzenlemek için kullanılır.
+  İşte bir CSS başlığının nasıl kullanılacağına dair temel bilgi:
+
+    1.HTML belgesinin <head> bölümüne gidin:
+
+         <head> 
+              <--CSS başlığı buraya gelecek-->
+         </head>
+
+    2.CSS başlığı eklemek için <style> etiketini kullanın:
+
+         <head>
+          <style>
+          /*CSS kodları buraya yazılır*/
+          </style>
+         </head>
+
+    3. CSS kodlarını <style> etiketi içine ekleyin.
+       Örneğin, bir HTML öğesinin rengini değiştirmek için 
+       aşağıdaki gibi bir CSS kuralları ekleyebilirsiniz:
+           <style>
+           p {
+              color: blue;
+           }
+          </style>
+
+      Bu örnek, tüm <p> öğelerinin metin rengini mavi yapar.
+    
+
+
+Img başlığı nasıl kullanılır
+
+
+
+Img başlıkları veya "alt metin" (alt text) olarak bilinen bu özellik, web sayfalarında ve diğer dijital medya içeriklerinde görsellerin açıklamalarını içermek için kullanılır. 
+Resim başlığı, görme engelli kullanıcılar için ek bilgi sağlamanın yanı sıra arama motorlarına da resmin içeriği hakkında bilgi verir.
+İşte bir resim başlığını nasıl kullanacağınızı açıklayan adımlar:
+
+1. HTML Kodu ile: 
+HTML kullanarak resim başlığı eklemek için <img> etiketi içinde alt özelliğini kullanabilirsiniz. Örnek:
+
+<img src="resim.jpg" alt="Güzel bir doğa manzarası"> 
+
+2. CMS (İçerik Yönetim Sistemi) ile: 
+Çoğu CMS, görsellere alt metin eklemek için basit bir arayüz sunar. İlgili görseli yüklerken veya düzenlerken alt metni girmeniz gerekir.
+
+3. Metin Düzenleme Programları ile: 
+Resimleri bir metin düzenleme programında kullanırken, resmin üzerine tıkladığınızda veya düzenleme seçeneklerine eriştiğinizde "Alt metin" veya "Başlık" seçeneğini kullanabilirsiniz.
+
+4. SEO ve İnsanlar İçin Anlamlı Olmalı:
+Resim başlığı, hem arama motorları hem de insanlar için anlamlı ve açık olmalıdır. Resmin içeriğini doğru bir şekilde tanımlamalıdır.
+
+Unutmayın ki resim başlıkları, web erişilebilirliği ve SEO için önemlidir, bu nedenle bu başlıkları dikkatli bir şekilde kullanmanız önemlidir.
+
+Bir media başlığı, genellikle bir haber veya makaleyi tanımlayan kısa ve etkili bir cümledir. İşte media başlığı kullanımıyla ilgili bazı temel kurallar:
+
+1. Özgün ve özetleyici olun: Başlık, haberi veya makaleyi özetlemelidir. Ana fikri net bir şekilde iletmelidir.
+
+2. Kısa ve öz: Başlık kısa ve etkili olmalıdır. Genellikle 5-10 kelime arasında olur.
+
+3. İlgi çekici olun: Okuyucunun dikkatini çekecek bir öğe içermeye çalışın. İlginç bir detay, çarpıcı bir ifade veya soru işareti gibi unsurlar kullanabilirsiniz.
+
+4. Tarafsız ve dürüst olun: Başlık, haberin veya makalenin içeriğini yansıtmalıdır. Okuyucuları yanıltacak veya yanlış bilgi veren başlıklardan kaçının.
+
+5. Anahtar kelimeleri kullanın: İlgili anahtar kelimeleri başlıkta kullanmak, makalenizin veya haberi arayan kişilerin bulmasına yardımcı olabilir.
+
+Örnek bir medya başlığı: "Yeni İklim Raporu, Küresel Sıcaklık Artışının Tehlikeli Eşiklerini Belirliyor"
+
+Bu başlık, ne hakkında olduğunu özetler, ilgi çekici bir açıklama sunar ve anahtar kelimeleri içerir. Başlığı yazarken, hedef kitlenizi ve amaçlarınızı da göz önünde bulundurmalısınız.
+
+Font kullanımı, HTML ve CSS ile metinlerin görünümünü özelleştirmek için yapılır. İşte temel bir font kullanımı örneği:
+
+1. *HTML ile Metni Belirleme:*
+
+   İlk adım, metni belirlemek için HTML etiketlerini kullanmaktır. Örneğin:
+
+   html
+   <p>Bu bir metin paragrafıdır.</p>
+   
+
+2. *CSS ile Font Özelliklerini Ayarlama:*
+
+   Fontun tarzını, boyutunu, rengini vb. özelliklerini CSS ile ayarlayabilirsiniz. Örnek:
+
+   html
+   <style>
+     p {
+       font-family: "Arial, sans-serif"; /* Font ailesi belirleme */
+       font-size: 16px; /* Font boyutu belirleme */
+       color: #333; /* Metin rengini belirleme */
+       font-weight: bold; /* Kalınlık (bold) */
+     }
+   </style>
+   
+
+   Bu CSS kodu, "p" etiketi içindeki metni özelleştirir.
+
+3. *Font Ailesi Seçimi:*
+
+   font-family özelliği, kullanmak istediğiniz yazı tipini belirlemenizi sağlar. Örnek olarak "Arial, sans-serif" kullanılmıştır. 
+   Tarayıcı, ilk belirtilen yazı tipini (Arial) kullanırken, eğer bu yazı tipi kullanılamıyorsa, alternatif olarak belirtilen "sans-serif" yazı tiplerini kullanır.
+
+4. *Diğer Font Özellikleri:*
+
+   Yukarıdaki örnekte font boyutu, metin rengi ve kalınlığı özelleştirilmiştir. Ayrıca başka özellikler de ekleyebilirsiniz, örneğin font stilini (italik, normal, vb.) veya alt çizgiyi belirlemek için.
+
+İşte temel bir font kullanımı. CSS ile çok daha fazla özelleştirme yapabilirsiniz. 
+Özel font dosyaları kullanarak veya Google Fontlar gibi çevrimiçi hizmetlerden fontlar ekleyerek daha fazla seçeneğiniz de bulunmaktadır.
+
+
+"Document başlığı" terimi, HTML belgelerinde sayfa başlığını belirlemek için kullanılan bir etiketi ifade eder. Sayfa başlığı, belgenin tarayıcı sekmesinde görünen metni ve sayfanın konusunu tanımlar. 
+Başlık, web sayfalarının SEO (Arama Motoru Optimizasyonu) açısından önemlidir. İşte HTML'de document başlığını kullanmanın temel şekli:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bu bir document başlığıdır</title>
+</head>
+<body>
+    <!-- Sayfa içeriği buraya gelir -->
+</body>
+</html>
+
+
+Yukarıdaki örnekte, <title> etiketi sayfanın başlığını tanımlar. Tarayıcı bu başlığı kullanarak sekme başlığı ve yer imlerinde görünen metni ayarlar. "Bu bir document başlığıdır" metni, sayfanızın başlığıdır ve dilediğiniz şekilde özelleştirebilirsiniz. SEO için, sayfa başlığını sayfanızın içeriğiyle ilişkilendirmek ve anlamlı, ilgi çekici bir başlık kullanmak önemlidir.
+
+WebAssembly (Wasm) başlığını kullanmak, Wasm ile ilgili bir HTML belgesi veya web uygulaması geliştirirken işe yarar. İşte temel adımlar:
+
+1. HTML Sayfası Oluşturma: İlk adım, Wasm başlığını kullanacağınız HTML sayfasını oluşturmaktır.
+Bu sayfa, web uygulamanızın temel belgesidir.
+
+2. Wasm Dosyasını Oluşturma: Wasm dosyanızı oluşturmanız gerekecektir.
+Bu dosya, WebAssembly kodunu içerir ve genellikle C, C++, Rust veya başka bir dilde yazılmış bir programın derlenmesiyle oluşturulur.
+
+3. Wasm Modülünü İçe Aktarma: HTML sayfanızın içine Wasm modülünü içe aktarmak için <script> etiketini kullanabilirsiniz. Örnek:
+
+html
+<script src="your-wasm-module.wasm"></script>
+
+
+4. JavaScript ile Etkileşim: Wasm modülünü JavaScript ile etkileşimde bulunmak için JavaScript kodu kullanabilirsiniz. 
+Genellikle WebAssembly.instantiate() veya WebAssembly.instantiateStreaming() fonksiyonları ile Wasm modülünü yükleyip çalıştırabilirsiniz. Örnek:
+
+javascript
+WebAssembly.instantiateStreaming(fetch('your-wasm-module.wasm'))
+  .then(result => {
+    const exports = result.instance.exports;
+    // Wasm fonksiyonlarına erişim sağlayabilirsiniz.
+  });
+
+
+5. Sayfayı Yükleme: HTML sayfanızı tarayıcıda açın ve Wasm modülünün yüklenip çalıştığını doğrulayın.
+
+Bu temel adımlar, Wasm başlığını kullanarak web uygulamalarında WebAssembly kodunu entegre etmenize yardımcı olacaktır.
+Bu süreç, Wasm ile daha fazla deneyim kazandıkça daha karmaşık hale gelebilir, ancak bu temel adımlar size başlangıç için yardımcı olacaktır.
+
+Manifest dosyaları genellikle Android uygulamaları için kullanılır.
+Bir Android uygulamasının manifest dosyası, uygulamanın özelliklerini ve davranışlarını tanımlar. İşte manifest dosyasının nasıl kullanılacağına dair temel bilgiler:
+
+1. *AndroidManifest.xml Dosyası Oluşturma*:
+Manifest dosyanızı projenizin "res" klasöründeki "xml" alt klasörüne ekleyin.
+Eğer dosya zaten varsa, onu düzenleyebilirsiniz.
+
+2. *Uygulama Bilgileri Tanımlama*:
+Manifest dosyası, uygulamanızın adı, paket adı, sürüm numarası ve simgeleri gibi temel bilgileri içerir.
+Bu bilgileri manifest dosyasında <application> ve <activity> etiketleri içinde tanımlarsınız.
+
+3. *İzinler ve Yetkileri Tanımlama*:
+Uygulamanızın ne tür izinlere veya yetkilere ihtiyaç duyduğunu belirtmek için manifest dosyasında <uses-permission> etiketlerini kullanabilirsiniz.
+Örneğin, kamera erişimi, konum hizmetleri veya internet erişimi gibi izinleri burada belirtmelisiniz.
+
+4. *Başlangıç Aktivitesi Belirtme*: 
+Uygulamanızın başlangıç ekranını ve aktivitesini manifest dosyasında <activity> etiketleri içinde tanımlarsınız.
+Bu, kullanıcı uygulamayı açtığında hangi ekrana yönlendirileceğini belirler.
+
+5. *İntent Filtreleri Tanımlama*:
+Uygulamanız, belirli türde intent'leri (içerikleri) işlemek istiyorsa, manifest dosyasında <intent-filter> etiketleri kullanarak bu niyetleri belirtmelisiniz.
+Örneğin, web bağlantıları veya özel dosya türleri gibi niyetleri ele alabilirsiniz.
+
+6. *Özellikleri ve Konfigürasyonları Belirtme*: 
+Uygulamanızın özelliklerini, konfigürasyonları ve gereksinimlerini manifest dosyasında belirtebilirsiniz.
+Örneğin, ekran yönlendirmeleri, dil seçenekleri ve donanım gereksinimleri gibi bilgileri burada tanımlayabilirsiniz.
+
+7. *Versiyon Kontrolü ve SDK Sürümünü Belirtme*: Manifest dosyasında, uygulamanın çalıştığı Android SDK sürümünü belirtmelisiniz.
+Ayrıca uygulamanın sürüm numarasını ve gereksinimlerini de burada tanımlayabilirsiniz.
+
+8. *Diğer Özelleştirmeler*: 
+Manifest dosyası, uygulamanızın diğer özelleştirmelerini de içerebilir, örneğin tema renkleri, uygulama simgeleri, anahtar kelimeler ve daha fazlası.
+
+Manifest dosyası, uygulamanızın temel yapı taşıdır ve uygulamanızın davranışını, izinlerini ve özelliklerini tanımlar. Bu dosyayı dikkatlice düzenlemek ve güncellemek, uygulamanızın doğru bir şekilde çalışmasını sağlar.
+
+
+
+
